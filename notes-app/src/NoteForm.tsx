@@ -23,7 +23,7 @@ export default function NoteForm({onSubmit, onAddTag, availableTags}:NoteFormPro
         onSubmit({
             title: titleRef.current!.value , 
             markdown : markdownRef.current!.value,
-            tags:[]
+            tags:selectedTags,
         })
     }
 
